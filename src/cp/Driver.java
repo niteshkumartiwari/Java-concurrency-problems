@@ -1,12 +1,15 @@
 package cp;
 
-public class Driver {
-    public static void main(String[] args) {
-        Solution sol= new Solution();
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(0);
-        root.right = new TreeNode(0);
+import java.io.ObjectStreamClass;
+import java.util.*;
 
-        System.out.println(sol.distributeCoins(root));
+class Driver{
+    public static void main(String[] args){
+        for(int i=0;i<5;i++){
+            for(int j=0;j<5;j++){
+                if(j==1) break;
+                System.out.println("i: "+i+" j: "+j);
+            }
+        }
     }
 }
