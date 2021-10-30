@@ -2,6 +2,8 @@ package corejava;
 
 public abstract class Driver {
     public static void main(String[] args) {
-        System.out.println("Hello");
+        long age= 23;
+        Animal animal= new Animal(age);
+        System.out.println(animal);
     }
 }
