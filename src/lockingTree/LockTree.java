@@ -1,4 +1,4 @@
-package lockingTree1.threadSafe;
+package lockingTree;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,11 +31,6 @@ public class LockTree {
             this.adj[u].add(v);
             this.parent[v]=u;
         }
-    }
-
-    private boolean lock(Node node) throws InterruptedException {
-        if(node.getIsLockedState()) return true;
-        return  false;
     }
 
     public boolean lock(int node){

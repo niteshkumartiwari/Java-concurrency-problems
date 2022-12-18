@@ -1,4 +1,4 @@
-package lockingTree1;
+package lockingTree.threadSafe;
 
 public class Driver {
     public static void main(String[] args) {

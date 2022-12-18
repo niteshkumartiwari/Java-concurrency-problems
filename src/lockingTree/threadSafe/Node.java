@@ -1,4 +1,4 @@
-package lockingTree1.threadSafe;
+package lockingTree.threadSafe;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package lockingTree1.threadSafe;
+package lockingTree.threadSafe;
 
 public class State {
     public boolean islocked;

@@ -1,4 +1,4 @@
-package lockingTree1;
+package lockingTree;
 
 public class State {
     public boolean islocked;
