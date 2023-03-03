@@ -9,12 +9,12 @@ public class UnisexBathroom {
     private Condition womenWaitingQueue = lock.newCondition();
     private Condition menWaitingQueue = lock.newCondition();
 
-    private int womenWaiting = 0;
-    private int menWaiting = 0;
-    private int womenUsing = 0;
-    private int menUsing = 0;
+    private volatile int womenWaiting = 0;
+    private volatile int menWaiting = 0;
+    private volatile int womenUsing = 0;
+    private volatile int menUsing = 0;
 
-    private final int BATHROOM_CAPACITY = 5;
+    private final int BATHROOM_CAPACITY = 2;
     private int free_resource = BATHROOM_CAPACITY;
 
     void maleUseBathRoom(String idx) {
